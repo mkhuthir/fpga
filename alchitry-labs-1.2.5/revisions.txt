@@ -1,0 +1,9 @@
+Copyright (C) 2019 Alchitry
+
+Version 1.0.0
+
+This is the first public release of the Alchitry Labs!
+
+Change log: 
+    First public release!
+    Support for Alchitry boards

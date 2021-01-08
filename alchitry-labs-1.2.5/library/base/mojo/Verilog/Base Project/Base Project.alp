@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Base Project" board="Mojo" language="Verilog" version="3">
+  <files>
+    <src top="true">mojo_top.v</src>
+    <constraint lib="true">mojo.ucf</constraint>
+  </files>
+</project>

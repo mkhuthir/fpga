@@ -1,0 +1,11 @@
+#!/bin/sh
+ 
+APPDIR="$(dirname -- "$(readlink -f -- "${0}")" )"
+
+cd "$APPDIR"
+
+LD_LIBRARY_PATH=`pwd`/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
+
+export LD_LIBRARY_PATH
+
+java -cp "lib/*" com.alchitry.labs.MainKt lin64 --loader "$@"
