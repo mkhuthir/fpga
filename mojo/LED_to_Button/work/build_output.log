@@ -1,0 +1,7 @@
+Warnings in file /home/mkhuthir/mycode/fpga/mojo-projects/LED_to_Button/source/mojo_top.luc:
+    Line 13, Column 4 : "avr_rx_busy" was never used
+    Line 5, Column 4 : "cclk" was never used
+    Line 7, Column 4 : "spi_ss" was never used
+    Line 8, Column 4 : "spi_mosi" was never used
+    Line 9, Column 4 : "spi_sck" was never used
+    Line 11, Column 4 : "avr_tx" was never used
