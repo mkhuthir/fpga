@@ -1,6 +1,18 @@
+
 set_io CLK     21
-set_io LED5    95
-set_io LED4    96
-set_io LED3    97
-set_io LED2    98
-set_io LED1    99
+
+set_io LED5     95
+set_io LED4     96
+set_io LED3     97
+set_io LED2     98
+set_io LED1     99
+
+set_io PMOD0    78
+set_io PMOD1    79
+set_io PMOD2    80
+set_io PMOD3    81
+set_io PMOD4    87
+set_io PMOD5    88
+set_io PMOD6    90
+set_io PMOD7    91
+
