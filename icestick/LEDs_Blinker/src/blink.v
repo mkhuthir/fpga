@@ -1,18 +1,23 @@
-module 
-    
-    main(input CLK_IN, output GLED5, output RLED1, output RLED2, output RLED3, output RLED4);
+module blink 
+(
+  input  CLK,
+  output LED1,
+  output LED2,
+  output LED3,
+  output LED4,
+  output LED5
+);
 
-        localparam COUNTER_WIDTH = 24;      // 2^24 = 16 million or so, approx 0.75 Hz with 12 MHz clock.
+  localparam bits = 5;
+  localparam delay = 22;
 
-        reg [COUNTER_WIDTH-1:0] counter;
-        always @(posedge CLK_IN)
+  reg [ bits + delay-1 :0 ] counter = 0;
+  reg [ bits - 1 :0] out;
 
-        counter <= counter + 1;
+  always @(posedge CLK) begin
+    counter <= counter + 1;
+    out <= counter >> delay;
+  end
 
-        assign GLED5 = counter[COUNTER_WIDTH — 1]; // MSB
-        assign RLED1 = counter[COUNTER_WIDTH — 2];
-        assign RLED2 = counter[COUNTER_WIDTH — 3];
-        assign RLED3 = counter[COUNTER_WIDTH — 4];
-        assign RLED4 = counter[COUNTER_WIDTH — 5];
- 
+  assign { LED1, LED2, LED3, LED4, LED5 } = out;
 endmodule
