@@ -1,3 +1,9 @@
+# Lattice iCEstick (iCE40HX1K)
+# LEDs Blinker
+# Muthanna Alwahash
+# (c) Sept 2023
+
+
 set_io CLK      21
 
 set_io LED5     95
