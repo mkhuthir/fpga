@@ -1,3 +1,8 @@
+// Lattice iCEstick (iCE40HX1K)
+// LEDs Blinker
+// Muthanna Alwahash
+// (c) Sept 2023
+
 module blink 
 (
   input  CLK,
