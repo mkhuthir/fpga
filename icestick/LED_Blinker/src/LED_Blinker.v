@@ -1,5 +1,5 @@
 // Lattice iCEstick (iCE40HX1K)
-// LEDs Blinker
+// LED_Blinker
 // Muthanna Alwahash
 // (c) Sept 2023
 
