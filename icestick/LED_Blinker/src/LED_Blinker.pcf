@@ -3,24 +3,56 @@
 # Muthanna Alwahash
 # (c) Sept 2023
 
-set_io CLK      21
 
-set_io PMOD0    78
-set_io PMOD1    79
-set_io PMOD2    80
-set_io PMOD3    81
+# FTDI 2232H USB
+#   set_io DCD      1       # CPLD PIO3_02
+#   set_io DSR      2       # CPLD PIO3_03
+#   set_io DTR      3       # CPLD PIO3_04
+#   set_io CTS      4       # CPLD PIO3_05
+#   set_io RTS      7       # CPLD PIO3_06
+#   set_io TX       8       # CPLD PIO3_07
+#   set_io RX       9       # CPLD PIO3_08
 
-set_io PMOD4    87
-set_io PMOD5    88
-set_io PMOD6    90
-set_io PMOD7    91
+# Discera 12MHz MEMS oscillator
+    set_io CLK      21      # CPLD PIO3_00 
 
-set_io LED5     95      # CPLD PIO1_10
-set_io LED4     96      # CPLD PIO1_11
-set_io LED3     97      # CPLD PIO1_12
-set_io LED2     98      # CPLD PIO1_13
-set_io LED1     99      # CPLD PIO1_14
+# Micron 32Mbit N25Q32 SPI flash
+#   set_io DONE     65      # CPLD CDONE
+#   set_io REST     65      # CPLD CREST
+#   set_io MISO     67      # CPLD PIOS_02
+#   set_io MOSI     68      # CPLD PIOS_01
+#   set_io SCK      70      # CPLD PIOS_00
+#   set_io SS       71      # CPLD PIOS_02
 
-# set_io IrDA_TXD 105     # CPLD PIO1_18
-# set_io IrDA_RXD 106     # CPLD PIO1_19
-# set_io IrDA_SD  107     # CPLD PIO1_20
+
+# 2x6 Pmod Connector
+    set_io Pmod1    78      # CPLD PIO1_02
+    set_io Pmod2    79      # CPLD PIO1_03
+    set_io Pmod3    80      # CPLD PIO1_04
+    set_io Pmod4    81      # CPLD PIO1_05
+    #      Pmod5    GND     # GND
+    #      Pmod6    3.3v    # 3.3v
+    
+    set_io Pmod7    87      # CPLD PIO1_06
+    set_io Pmod8    88      # CPLD PIO1_07
+    set_io Pmod9    90      # CPLD PIO1_08
+    set_io Pmod10   91      # CPLD PIO1_09
+    #      Pmod11   GND     # GND
+    #      Pmod12   3.3v    # 3.3v
+
+
+# 1x6 Pmod Connector
+
+# 1x6 Pmod Connector
+
+# Onboard User LEDs
+    set_io LED5     95      # CPLD PIO1_10
+    set_io LED4     96      # CPLD PIO1_11
+    set_io LED3     97      # CPLD PIO1_12
+    set_io LED2     98      # CPLD PIO1_13
+    set_io LED1     99      # CPLD PIO1_14
+
+# Vishay TFDU4101 IrDA transceiver 
+#   set_io IrDA_TXD 105     # CPLD PIO1_18
+#   set_io IrDA_RXD 106     # CPLD PIO1_19
+#   set_io IrDA_SD  107     # CPLD PIO1_20
