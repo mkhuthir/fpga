@@ -20,14 +20,14 @@ module blink
   output LED4,
   output LED5,
 
-  output PMOD0,
-  output PMOD1,
-  output PMOD2,
-  output PMOD3,
-  output PMOD4,
-  output PMOD5,
-  output PMOD6,
-  output PMOD7
+  output Pmod1,
+  output Pmod2,
+  output Pmod3,
+  output Pmod4,
+  output Pmod7,
+  output Pmod8,
+  output Pmod9,
+  output Pmod10
 );
 
   localparam bits = 8;  // number of bits that you would like to toggle
@@ -42,6 +42,6 @@ module blink
   end
 
   assign { LED1, LED2, LED3, LED4, LED5 } = out;
-  assign { PMOD7, PMOD6, PMOD5, PMOD4, PMOD3, PMOD2, PMOD1, PMOD0 } = out;
+  assign { Pmod10, Pmod9, Pmod8, Pmod7, Pmod4, Pmod3, Pmod2, Pmod1 } = out;
   
 endmodule
