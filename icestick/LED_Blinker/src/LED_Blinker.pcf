@@ -16,11 +16,12 @@ set_io PMOD5    88
 set_io PMOD6    90
 set_io PMOD7    91
 
-set_io LED5     95
-set_io LED4     96
-set_io LED3     97
-set_io LED2     98
-set_io LED1     99
+set_io LED5     95      # CPLD PIO1_10
+set_io LED4     96      # CPLD PIO1_11
+set_io LED3     97      # CPLD PIO1_12
+set_io LED2     98      # CPLD PIO1_13
+set_io LED1     99      # CPLD PIO1_14
 
-
-
+# set_io IrDA_TXD 105     # CPLD PIO1_18
+# set_io IrDA_RXD 106     # CPLD PIO1_19
+# set_io IrDA_SD  107     # CPLD PIO1_20

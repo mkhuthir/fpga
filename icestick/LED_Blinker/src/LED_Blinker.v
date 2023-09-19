@@ -3,6 +3,13 @@
 // Muthanna Alwahash
 // (c) Sept 2023
 
+
+module IrDA 
+(
+
+);
+endmodule 
+
 module blink 
 (
   input  CLK,
