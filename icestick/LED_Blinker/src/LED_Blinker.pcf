@@ -3,7 +3,6 @@
 # Muthanna Alwahash
 # (c) Sept 2023
 
-
 set_io CLK      21
 
 set_io PMOD0    78
