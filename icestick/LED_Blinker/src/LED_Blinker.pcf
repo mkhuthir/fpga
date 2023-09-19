@@ -15,6 +15,18 @@
 # Discera 12MHz MEMS oscillator
     set_io CLK      21      # CPLD PIO3_00 
 
+# 1x10 Connector
+#   set_io Pmod     44      # CPLD PIO2_10
+#   set_io Pmod     45      # CPLD PIO2_11
+#   set_io Pmod     47      # CPLD PIO2_12
+#   set_io Pmod     48      # CPLD PIO2_13
+#   set_io Pmod     56      # CPLD PIO2_14
+#   set_io Pmod     60      # CPLD PIO2_15
+#   set_io Pmod     61      # CPLD PIO2_16
+#   set_io Pmod     62      # CPLD PIO2_17
+    #      Pmod     GND     # GND
+    #      Pmod     3.3v    # 3.3v
+
 # Micron 32Mbit N25Q32 SPI flash
 #   set_io DONE     65      # CPLD CDONE
 #   set_io REST     65      # CPLD CREST
@@ -22,7 +34,6 @@
 #   set_io MOSI     68      # CPLD PIOS_01
 #   set_io SCK      70      # CPLD PIOS_00
 #   set_io SS       71      # CPLD PIOS_02
-
 
 # 2x6 Pmod Connector
     set_io Pmod1    78      # CPLD PIO1_02
@@ -39,31 +50,6 @@
     #      Pmod11   GND     # GND
     #      Pmod12   3.3v    # 3.3v
 
-
-# 1x6 Pmod Connector
-#   set_io Pmod     44      # CPLD PIO2_10
-#   set_io Pmod     45      # CPLD PIO2_11
-#   set_io Pmod     47      # CPLD PIO2_12
-#   set_io Pmod     48      # CPLD PIO2_13
-#   set_io Pmod     56      # CPLD PIO2_14
-#   set_io Pmod     60      # CPLD PIO2_15
-#   set_io Pmod     61      # CPLD PIO2_16
-#   set_io Pmod     62      # CPLD PIO2_17
-    #      Pmod     GND     # GND
-    #      Pmod     3.3v    # 3.3v
-
-# 1x6 Pmod Connector
-#   set_io Pmod     119     # CPLD PIO0_09
-#   set_io Pmod     118     # CPLD PIO0_08
-#   set_io Pmod     117     # CPLD PIO0_07
-#   set_io Pmod     116     # CPLD PIO0_06
-#   set_io Pmod     115     # CPLD PIO0_05
-#   set_io Pmod     114     # CPLD PIO0_04
-#   set_io Pmod     113     # CPLD PIO0_03
-#   set_io Pmod     112     # CPLD PIO0_02
-    #      Pmod     GND     # GND
-    #      Pmod     3.3v    # 3.3v
-
 # Onboard User LEDs
     set_io LED5     95      # CPLD PIO1_10
     set_io LED4     96      # CPLD PIO1_11
@@ -75,3 +61,19 @@
 #   set_io IrDA_TXD 105     # CPLD PIO1_18
 #   set_io IrDA_RXD 106     # CPLD PIO1_19
 #   set_io IrDA_SD  107     # CPLD PIO1_20
+
+# 1x10 Connector
+#   set_io Pmod     119     # CPLD PIO0_09
+#   set_io Pmod     118     # CPLD PIO0_08
+#   set_io Pmod     117     # CPLD PIO0_07
+#   set_io Pmod     116     # CPLD PIO0_06
+#   set_io Pmod     115     # CPLD PIO0_05
+#   set_io Pmod     114     # CPLD PIO0_04
+#   set_io Pmod     113     # CPLD PIO0_03
+#   set_io Pmod     112     # CPLD PIO0_02
+    #      Pmod     GND     # GND
+    #      Pmod     3.3v    # 3.3v
+
+
+
+
