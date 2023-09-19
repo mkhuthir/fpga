@@ -23,18 +23,18 @@ module blink
   output PMOD7
 );
 
-  localparam bits = 8;
-  localparam delay = 22;
+  localparam bits = 8;  // number of bits that you would like to toggle
+  localparam div  = 22; // delay of toggle in number of divider bits
 
-  reg [ bits + delay-1:0] counter = 0;
-  reg [ bits - 1      :0] out;
+  reg [ bits+div-1:0] counter = 0;
+  reg [ bits-1:0]     out;
 
   always @(posedge CLK) begin
     counter <= counter + 1;
-    out     <= counter >> delay;
+    out     <= (counter >> div);  // take MSB "bits" from counter
   end
 
   assign { LED1, LED2, LED3, LED4, LED5 } = out;
-  assign { PMOD0, PMOD1, PMOD2, PMOD3, PMOD4, PMOD5, PMOD6, PMOD7 } = out;
+  assign { PMOD7, PMOD6, PMOD5, PMOD4, PMOD3, PMOD2, PMOD1, PMOD0 } = out;
   
 endmodule
