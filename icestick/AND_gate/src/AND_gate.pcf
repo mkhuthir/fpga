@@ -1,4 +1,0 @@
-
-set_io  LED 99
-set_io  I0  78 
-set_io  I1  79 
