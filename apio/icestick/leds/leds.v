@@ -1,7 +1,3 @@
-//------------------------------------------------------------------
-//-- Hello world example for the iCEstick board
-//-- Turn on all the leds
-//------------------------------------------------------------------
 
 module leds(output wire D1,
             output wire D2,
