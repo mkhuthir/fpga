@@ -5,73 +5,73 @@
 
 
 # Discera 12MHz MEMS oscillator
-    set_io CLK      21      # CPLD PIO3_00 
+    set_io --warn-no-port CLK      21      # CPLD PIO3_00 
 
 # J1 1x10 Connector
-#          J1_1     3.3v    # 3.3v
-#          J1_2     GND     # GND
-    set_io J1_3     112     # CPLD PIO0_02
-    set_io J1_4     113     # CPLD PIO0_03
-    set_io J1_5     114     # CPLD PIO0_04
-    set_io J1_6     115     # CPLD PIO0_05
-    set_io J1_7     116     # CPLD PIO0_06
-    set_io J1_8     117     # CPLD PIO0_07
-    set_io J1_9     118     # CPLD PIO0_08
-    set_io J1_10    119     # CPLD PIO0_09
+#                         J1_1     3.3v    # 3.3v
+#                         J1_2     GND     # GND
+    set_io --warn-no-port J1_3     112     # CPLD PIO0_02
+    set_io --warn-no-port J1_4     113     # CPLD PIO0_03
+    set_io --warn-no-port J1_5     114     # CPLD PIO0_04
+    set_io --warn-no-port J1_6     115     # CPLD PIO0_05
+    set_io --warn-no-port J1_7     116     # CPLD PIO0_06
+    set_io --warn-no-port J1_8     117     # CPLD PIO0_07
+    set_io --warn-no-port J1_9     118     # CPLD PIO0_08
+    set_io --warn-no-port J1_10    119     # CPLD PIO0_09
 
 
 # J2 2x6 Connector (Pmod)
-    set_io J2_1     78      # CPLD PIO1_02
-    set_io J2_2     79      # CPLD PIO1_03
-    set_io J2_3     80      # CPLD PIO1_04
-    set_io J2_4     81      # CPLD PIO1_05
-#          J2_5     GND     # GND
-#          J2_6     3.3v    # 3.3v
-    set_io J2_7     87      # CPLD PIO1_06
-    set_io J2_8     88      # CPLD PIO1_07
-    set_io J2_9     90      # CPLD PIO1_08
-    set_io J2_10    91      # CPLD PIO1_09
-#          J2_11    GND     # GND
-#          J2_12    3.3v    # 3.3v
+    set_io --warn-no-port J2_1     78      # CPLD PIO1_02
+    set_io --warn-no-port J2_2     79      # CPLD PIO1_03
+    set_io --warn-no-port J2_3     80      # CPLD PIO1_04
+    set_io --warn-no-port J2_4     81      # CPLD PIO1_05
+#                         J2_5     GND     # GND
+#                         J2_6     3.3v    # 3.3v
+    set_io --warn-no-port J2_7     87      # CPLD PIO1_06
+    set_io --warn-no-port J2_8     88      # CPLD PIO1_07
+    set_io --warn-no-port J2_9     90      # CPLD PIO1_08
+    set_io --warn-no-port J2_10    91      # CPLD PIO1_09
+#                         J2_11    GND     # GND
+#                         J2_12    3.3v    # 3.3v
 
 # J3 1x10 Connector
-#          J3_1     3.3v    # 3.3v
-#          J3_2     GND     # GND
-    set_io J3_3     62      # CPLD PIO2_17
-    set_io J3_4     61      # CPLD PIO2_16
-    set_io J3_5     60      # CPLD PIO2_15
-    set_io J3_6     56      # CPLD PIO2_14
-    set_io J3_7     48      # CPLD PIO2_13
-    set_io J3_8     47      # CPLD PIO2_12
-    set_io J3_9     45      # CPLD PIO2_11
-    set_io J3_10    44      # CPLD PIO2_10
+#                         J3_1     3.3v    # 3.3v
+#                         J3_2     GND     # GND
+    set_io --warn-no-port J3_3     62      # CPLD PIO2_17
+    set_io --warn-no-port J3_4     61      # CPLD PIO2_16
+    set_io --warn-no-port J3_5     60      # CPLD PIO2_15
+    set_io --warn-no-port J3_6     56      # CPLD PIO2_14
+    set_io --warn-no-port J3_7     48      # CPLD PIO2_13
+    set_io --warn-no-port J3_8     47      # CPLD PIO2_12
+    set_io --warn-no-port J3_9     45      # CPLD PIO2_11
+    set_io --warn-no-port J3_10    44      # CPLD PIO2_10
 
 # Onboard User LEDs
-    set_io LED5     95      # CPLD PIO1_10
-    set_io LED4     96      # CPLD PIO1_11
-    set_io LED3     97      # CPLD PIO1_12
-    set_io LED2     98      # CPLD PIO1_13
-    set_io LED1     99      # CPLD PIO1_14
+    set_io --warn-no-port LED5     95      # CPLD PIO1_10
+    set_io --warn-no-port LED4     96      # CPLD PIO1_11
+    set_io --warn-no-port LED3     97      # CPLD PIO1_12
+    set_io --warn-no-port LED2     98      # CPLD PIO1_13
+    set_io --warn-no-port LED1     99      # CPLD PIO1_14
 
 # Vishay TFDU4101 IrDA transceiver 
-#   set_io IrDA_TXD 105     # CPLD PIO1_18
-#   set_io IrDA_RXD 106     # CPLD PIO1_19
-#   set_io IrDA_SD  107     # CPLD PIO1_20
+    set_io --warn-no-port IrDA_TXD 105     # CPLD PIO1_18
+    set_io --warn-no-port IrDA_RXD 106     # CPLD PIO1_19
+    set_io --warn-no-port IrDA_SD  107     # CPLD PIO1_20
 
 # FTDI 2232H USB
-#   set_io DCD      1       # CPLD PIO3_02
-#   set_io DSR      2       # CPLD PIO3_03
-#   set_io DTR      3       # CPLD PIO3_04
-#   set_io CTS      4       # CPLD PIO3_05
-#   set_io RTS      7       # CPLD PIO3_06
-#   set_io TX       8       # CPLD PIO3_07
-#   set_io RX       9       # CPLD PIO3_08
+    set_io --warn-no-port DCD      1       # CPLD PIO3_02
+    set_io --warn-no-port DSR      2       # CPLD PIO3_03
+    set_io --warn-no-port DTR      3       # CPLD PIO3_04
+    set_io --warn-no-port CTS      4       # CPLD PIO3_05
+    set_io --warn-no-port RTS      7       # CPLD PIO3_06
+    set_io --warn-no-port TX       8       # CPLD PIO3_07
+    set_io --warn-no-port RX       9       # CPLD PIO3_08
 
 # Micron 32Mbit N25Q32 SPI flash
-#   set_io DONE     65      # CPLD CDONE
-#   set_io REST     66      # CPLD CREST
-#   set_io MISO     67      # CPLD PIOS_02
-#   set_io MOSI     68      # CPLD PIOS_01
-#   set_io SCK      70      # CPLD PIOS_00
-#   set_io SS       71      # CPLD PIOS_03
-#          3.3v     72      # 3.3v
+    set_io --warn-no-port DONE     65      # CPLD CDONE
+    set_io --warn-no-port REST     66      # CPLD CREST
+    set_io --warn-no-port MISO     67      # CPLD PIOS_02
+    set_io --warn-no-port MOSI     68      # CPLD PIOS_01
+    set_io --warn-no-port SCK      70      # CPLD PIOS_00
+    set_io --warn-no-port SS       71      # CPLD PIOS_03
+#                         3.3v     72      # 3.3v
