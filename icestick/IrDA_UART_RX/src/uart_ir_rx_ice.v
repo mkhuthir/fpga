@@ -1,59 +1,19 @@
-// --------------------------------------------------------------------
-// >>>>>>>>>>>>>>>>>>>>>>>>> COPYRIGHT NOTICE <<<<<<<<<<<<<<<<<<<<<<<<<
-// --------------------------------------------------------------------
-// Copyright (c) 2006 by Lattice Semiconductor Corporation
-// --------------------------------------------------------------------
-//
-// Permission:
-//
-//   Lattice Semiconductor grants permission to use this code for use
-//   in synthesis for any Lattice programmable logic product.  Other
-//   use of this code, including the selling or duplication of any
-//   portion is strictly prohibited.
-//
-// Disclaimer:
-//
-//   This VHDL or Verilog source code is intended as a design reference
-//   which illustrates how these types of functions can be implemented.
-//   It is the user's responsibility to verify their design for
-//   consistency and functionality through the use of formal
-//   verification methods.  Lattice Semiconductor provides no warranty
-//   regarding the use or functionality of this code.
-//
-// --------------------------------------------------------------------
-//           
-//                     Lattice Semiconductor Corporation
-//                     5555 NE Moore Court
-//                     Hillsboro, OR 97214
-//                     U.S.A
-//
-//                     TEL: 1-800-Lattice (USA and Canada)
-//                          503-268-8001 (other locations)
-//
-//                     web: http://www.latticesemi.com/
-//                     email: techsupport@latticesemi.com
-// --------------------------------------------------------------------
-//
-// Revision History :
-
-
 // UART RX over IrDA on iCEstick
 
 module uart (
-         input wire   clk_in ,         
-         
-         input wire   from_ir , 
-         output wire  to_ir ,
-         output wire  sd ,
-         input wire   i_serial_data ,
-         output wire  o_serial_data ,
-         //debug
-         output       test1 ,
-         output       test2 ,
-         output       test3 ,
-         output [7:0] led   
-         
-         );
+            input      wire    clk_in ,         
+
+            input      wire    from_ir , 
+            output     wire    to_ir ,
+            output     wire    sd ,
+            input      wire    i_serial_data ,
+            output     wire    o_serial_data ,
+            //debug
+            output             test1 ,
+            output             test2 ,
+            output             test3 ,
+            output     [7:0]   led   
+            );
 
 // parameters (constants)
    parameter clk_freq = 27'd12000000;  // in Hz for 12MHz clock
