@@ -1,0 +1,18 @@
+# Muthanna Alwahash
+# (c) Sept 2023
+
+# 7 Segments
+
+
+# Discera 12MHz MEMS oscillator
+    set_io --warn-no-port CLK      21      # CPLD PIO3_00 
+
+# J2 2x6 Connector (Pmod)
+    set_io --warn-no-port J2_1     78      # CPLD PIO1_02
+    set_io --warn-no-port J2_2     79      # CPLD PIO1_03
+    set_io --warn-no-port J2_3     80      # CPLD PIO1_04
+    set_io --warn-no-port J2_4     81      # CPLD PIO1_05
+    set_io --warn-no-port J2_7     87      # CPLD PIO1_06
+    set_io --warn-no-port J2_8     88      # CPLD PIO1_07
+    set_io --warn-no-port J2_9     90      # CPLD PIO1_08
+    set_io --warn-no-port J2_10    91      # CPLD PIO1_09
