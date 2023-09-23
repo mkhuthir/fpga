@@ -1,3 +1,5 @@
 # Muthanna Alwahash
 # (c) Sept 2023
 
+set_io LED B6
+set_io CLK D1
