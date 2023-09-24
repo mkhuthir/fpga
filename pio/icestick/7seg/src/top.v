@@ -23,10 +23,10 @@ module digit_to_segments
     assign segments =   (digit==4'h0) ? 7'b0000001 :
                         (digit==4'h1) ? 7'b1001111 :
                         (digit==4'h2) ? 7'b0010010 :
-                        (digit==4'h3) ? 7'b0 :
-                        (digit==4'h4) ? 7'b0 :
-                        (digit==4'h5) ? 7'b0 :
-                        (digit==4'h6) ? 7'b0 :
+                        (digit==4'h3) ? 7'b0000110 :
+                        (digit==4'h4) ? 7'b1001100 :
+                        (digit==4'h5) ? 7'b0100100 :
+                        (digit==4'h6) ? 7'b0100000 :
                         (digit==4'h7) ? 7'b0 :
                         (digit==4'h8) ? 7'b0 :
                         (digit==4'h9) ? 7'b0 :
@@ -60,7 +60,7 @@ module top
     initial
         begin
             timer = 0;
-            count = 0;
+            count = 6;
         end
 
     always @(posedge clk)
