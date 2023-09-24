@@ -60,7 +60,7 @@ module top
     initial
         begin
             timer = 0;
-            count = 15;
+            count = 0;
         end
 
     always @(posedge clk)
