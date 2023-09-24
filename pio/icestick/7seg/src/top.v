@@ -27,15 +27,15 @@ module digit_to_segments
                         (digit==4'h4) ? 7'b1001100 :
                         (digit==4'h5) ? 7'b0100100 :
                         (digit==4'h6) ? 7'b0100000 :
-                        (digit==4'h7) ? 7'b0 :
-                        (digit==4'h8) ? 7'b0 :
-                        (digit==4'h9) ? 7'b0 :
-                        (digit==4'ha) ? 7'b0 :
-                        (digit==4'hb) ? 7'b0 :
-                        (digit==4'hc) ? 7'b0 :
-                        (digit==4'he) ? 7'b0 :
-                        (digit==4'he) ? 7'b0 :
-                        (digit==4'hf) ? 7'b0 :
+                        (digit==4'h7) ? 7'b0001111 :
+                        (digit==4'h8) ? 7'b0000000 :
+                        (digit==4'h9) ? 7'b0000100 :
+                        (digit==4'ha) ? 7'b0001000 :
+                        (digit==4'hb) ? 7'b1100000 :
+                        (digit==4'hc) ? 7'b0110001 :
+                        (digit==4'hd) ? 7'b1000010 :
+                        (digit==4'he) ? 7'b0110000 :
+                        (digit==4'hf) ? 7'b0111000 :
                         7'b0110110;                     //this should never happen "H"
 
 endmodule
@@ -60,7 +60,7 @@ module top
     initial
         begin
             timer = 0;
-            count = 6;
+            count = 15;
         end
 
     always @(posedge clk)
