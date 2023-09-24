@@ -22,7 +22,7 @@ module digit_to_segments
     );
     assign segments =   (digit==4'h0) ? 7'b0000001 :
                         (digit==4'h1) ? 7'b1001111 :
-                        (digit==4'h2) ? 7'b0 :
+                        (digit==4'h2) ? 7'b0010010 :
                         (digit==4'h3) ? 7'b0 :
                         (digit==4'h4) ? 7'b0 :
                         (digit==4'h5) ? 7'b0 :
@@ -48,29 +48,29 @@ module top
         output J2_1 ,J2_2 ,J2_3 ,J2_4 ,J2_7 ,J2_8 ,J2_9 ,J2_10
     );
 
-    reg [31:0]  counter_time;
-    reg [3:0]   counter_number;
+    reg [31:0]  timer;
+    reg [3:0]   count;
     wire [6:0]  seg_out;
 
-    digit_to_segments inst(.digit(counter_number), .segments(seg_out));
+    digit_to_segments inst(.digit(count), .segments(seg_out));
     
     assign J2_10 = 1'b1;
     assign { J2_1 ,J2_2 ,J2_3 ,J2_4 ,J2_7 ,J2_8 ,J2_9 } = seg_out;
 
     initial
         begin
-            counter_time = 0;
-            counter_number = 0;
+            timer = 0;
+            count = 0;
         end
 
     always @(posedge clk)
         begin
-            counter_time <= counter_time + 1;
-            if(counter_time == 32'h400000) begin // around 0.25 sec
-                counter_time <= 0;
-                counter_number <= counter_number + 1;
-            end
-
+            timer <= timer + 1;
+            if(timer == 32'h400000) 
+                begin // around 0.25 sec
+                    timer <= 0;
+                    count <= count + 1;
+                end
         end
 
 endmodule
