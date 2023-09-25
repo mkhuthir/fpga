@@ -6,3 +6,7 @@ FPGA Code using:
 * Dangerousprototypes Xilinx CoolRunner-II CPLD
 * Dangerousprototypes Xilinx XC9500XL CPLD
 
+
+To install ICESTORM project:
+
+sudo apt install fpga-icestorm
