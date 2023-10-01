@@ -1,11 +1,22 @@
-filename = led
+filename = chase
 
 ICELINK_DIR=$(shell df | grep iCELink | awk '{print $$6}')
-${warning iCELink path: $(ICELINK_DIR)}
+${info iCELink path: $(ICELINK_DIR)}
 
 build:
-	yosys -p "synth_ice40 -json hardware.json -blif hardware.blif" $(filename).v
-	nextpnr-ice40 --lp1k --package cm36 --json hardware.json --pcf $(filename).pcf --asc hardware.asc --freq 48
+
+	yosys 	-p "synth_ice40 -json hardware.json -blif hardware.blif" \
+		$(filename).v \
+		-q
+
+	nextpnr-ice40 	--lp1k 			\
+			--package cm36 		\
+			--json hardware.json 	\
+			--pcf $(filename).pcf 	\
+			--asc hardware.asc 	\
+			--freq 48		\
+			--quiet
+
 	icepack hardware.asc hardware.bin
 
 upload:

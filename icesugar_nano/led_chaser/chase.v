@@ -7,7 +7,7 @@ module chase
 	);
       
     reg [25:0] counter;
-    wire lclk = counter[21];
+    wire CLK2 = counter[18];
 
     initial begin
         LED[7:0] = 8'b11111110;
@@ -18,7 +18,7 @@ module chase
         counter <= counter + 1;
     end
 
-    always @(posedge lclk)
+    always @(posedge CLK2)
     begin
         LED <= {LED[6:0],LED[7]};
     end
