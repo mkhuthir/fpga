@@ -55,24 +55,24 @@
     set_io --warn-no-port LED1     99      # CPLD PIO1_14
 
 # Vishay TFDU4101 IrDA transceiver 
-    set_io --warn-no-port IrDA_TXD 105     # CPLD PIO1_18
-    set_io --warn-no-port IrDA_RXD 106     # CPLD PIO1_19
-    set_io --warn-no-port IrDA_SD  107     # CPLD PIO1_20
+#   set_io --warn-no-port IrDA_TXD 105     # CPLD PIO1_18
+#   set_io --warn-no-port IrDA_RXD 106     # CPLD PIO1_19
+#   set_io --warn-no-port IrDA_SD  107     # CPLD PIO1_20
 
 # FTDI 2232H USB
-    set_io --warn-no-port DCD      1       # CPLD PIO3_02
-    set_io --warn-no-port DSR      2       # CPLD PIO3_03
-    set_io --warn-no-port DTR      3       # CPLD PIO3_04
-    set_io --warn-no-port CTS      4       # CPLD PIO3_05
-    set_io --warn-no-port RTS      7       # CPLD PIO3_06
-    set_io --warn-no-port TX       8       # CPLD PIO3_07
-    set_io --warn-no-port RX       9       # CPLD PIO3_08
+#   set_io --warn-no-port DCD      1       # CPLD PIO3_02
+#   set_io --warn-no-port DSR      2       # CPLD PIO3_03
+#   set_io --warn-no-port DTR      3       # CPLD PIO3_04
+#   set_io --warn-no-port CTS      4       # CPLD PIO3_05
+#   set_io --warn-no-port RTS      7       # CPLD PIO3_06
+#   set_io --warn-no-port TX       8       # CPLD PIO3_07
+#   set_io --warn-no-port RX       9       # CPLD PIO3_08
 
 # Micron 32Mbit N25Q32 SPI flash
-    set_io --warn-no-port DONE     65      # CPLD CDONE
-    set_io --warn-no-port REST     66      # CPLD CREST
-    set_io --warn-no-port MISO     67      # CPLD PIOS_02
-    set_io --warn-no-port MOSI     68      # CPLD PIOS_01
-    set_io --warn-no-port SCK      70      # CPLD PIOS_00
-    set_io --warn-no-port SS       71      # CPLD PIOS_03
+#   set_io --warn-no-port DONE     65      # CPLD CDONE
+#   set_io --warn-no-port REST     66      # CPLD CREST
+#   set_io --warn-no-port MISO     67      # CPLD PIOS_02
+#   set_io --warn-no-port MOSI     68      # CPLD PIOS_01
+#   set_io --warn-no-port SCK      70      # CPLD PIOS_00
+#   set_io --warn-no-port SS       71      # CPLD PIOS_03
 #                         3.3v     72      # 3.3v

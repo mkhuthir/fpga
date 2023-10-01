@@ -50,7 +50,7 @@ endmodule
 
 module top
     (
-        input clk, 
+        input CLK, 
         output J2_1 ,J2_2 ,J2_3 ,J2_4 ,J2_7 ,J2_8 ,J2_9 ,J2_10
     );
 
@@ -68,7 +68,7 @@ module top
             count = 0;
         end
 
-    always @(posedge clk)
+    always @(posedge CLK)
         begin
             timer <= timer + 1;
             if(timer == 32'h400000) 
