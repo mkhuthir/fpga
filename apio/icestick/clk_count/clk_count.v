@@ -1,6 +1,6 @@
 
 // Muthanna Alwahash
-// (c) Sept 2023
+// Sept 2023
 
 module clock_counter
     (

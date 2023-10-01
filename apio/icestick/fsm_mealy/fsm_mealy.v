@@ -1,4 +1,7 @@
 
+// Muthanna Alwahash
+// Sept 2023
+
 // State machine that counts up when button is pressed
 module mealy_fsm (
 

@@ -1,5 +1,5 @@
 // Muthanna Alwahash
-// (c) Sept 2023
+// Sept 2023
 
 module leds_on
     (
