@@ -1,0 +1,6 @@
+# Muthanna Alwahash
+# October 2023
+# ICESugar Nano
+
+set_io LED B6
+set_io CLK D1
