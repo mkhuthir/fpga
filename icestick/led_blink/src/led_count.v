@@ -1,12 +1,13 @@
 // Lattice iCEstick (iCE40HX1K)
-// LED_Blinker
+// October 2023
 // Muthanna Alwahash
-// (c) Sept 2023
 
-module blink 
+module led_count
 (
+  // 12MHz onboard oscilator 
   input  CLK,
 
+  // All pins of J1, J2, J3, and LEDs are set as output
   output LED1, LED2, LED3, LED4, LED5,
   output J1_3, J1_4, J1_5, J1_6, J1_7, J1_8, J1_9, J1_10,
   output J2_1, J2_2, J2_3, J2_4, J2_7, J2_8, J2_9, J2_10,
