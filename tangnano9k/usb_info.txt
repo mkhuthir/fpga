@@ -1,0 +1,25 @@
+
+$ sudo dmesg
+
+[ 6891.451997] usb 1-11: new full-speed USB device number 3 using xhci_hcd
+[ 6891.600468] usb 1-11: not running at top speed; connect to a high speed hub
+[ 6891.601728] usb 1-11: New USB device found, idVendor=0403, idProduct=6010, bcdDevice= 5.00
+[ 6891.601744] usb 1-11: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 6891.601751] usb 1-11: Product: JTAG Debugger
+[ 6891.601757] usb 1-11: Manufacturer: SIPEED
+[ 6891.601762] usb 1-11: SerialNumber: FactoryAIOT Pro
+[ 6891.622979] usbcore: registered new interface driver usbserial_generic
+[ 6891.622989] usbserial: USB Serial support registered for generic
+[ 6891.626495] usbcore: registered new interface driver ftdi_sio
+[ 6891.626514] usbserial: USB Serial support registered for FTDI USB Serial Device
+[ 6891.626576] ftdi_sio 1-11:1.0: FTDI USB Serial Device converter detected
+[ 6891.626652] usb 1-11: Detected FT2232C/D
+[ 6891.626982] usb 1-11: FTDI USB Serial Device converter now attached to ttyUSB0
+[ 6891.627067] ftdi_sio 1-11:1.1: FTDI USB Serial Device converter detected
+[ 6891.627143] usb 1-11: Detected FT2232C/D
+[ 6891.627384] usb 1-11: FTDI USB Serial Device converter now attached to ttyUSB1
+
+
+$ lsusb
+
+Bus 001 Device 003: ID 0403:6010 Future Technology Devices International, Ltd FT2232C/D/H Dual UART/FIFO IC
