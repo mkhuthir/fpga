@@ -15,18 +15,7 @@
 ## Useful tools:
 
 * APIO
-sudo apt install fpga-icestorm
-sudo apt install nextpnr-ice40
-
-
-* OpenFPGALoader
-
-git clone https://github.com/trabucayre/openFPGALoader
-cd openFPGALoader
-mkdir build
-cd build
-cmake ..
-make -j$(nproc)
-
-* GOWIN EDA
-https://www.gowinsemi.com/en/support/download_eda/
+* fpga-icestorm
+* nextpnr-ice40
+* OpenFPGALoader: https://github.com/trabucayre/openFPGALoader
+* GOWIN EDA: https://www.gowinsemi.com/en/support/download_eda
