@@ -29,3 +29,4 @@ cmake ..
 make -j$(nproc)
 
 * GOWIN EDA
+https://www.gowinsemi.com/en/support/download_eda/
