@@ -1,7 +1,7 @@
 // Muthanna Alwahash
 // October 2023
 
-module led (
+module blink (
     input sys_clk,          // clk input
     input sys_rst_n,        // reset input
     output reg [5:0] led    // 6 LEDS pin
