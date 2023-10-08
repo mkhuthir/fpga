@@ -1,6 +1,7 @@
 .pio
 
 impl/
+*.gprj.user
 
 .sconsign.dblite
 hardware.asc
